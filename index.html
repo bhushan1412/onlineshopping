@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>shop</title>
-  <!-- Linking external CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Simple Shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>flipkart shopping</h1>
-    <p>welcome to our site</p>
-  </header>
+<header>
+    <h1>Simple Shop</h1>
+    <div class="cart">
+        🛒 Cart: <span id="cart-count">0</span>
+    </div>
+</header>
 
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<main class="products">
+    <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>T-Shirt</h3>
+        <p>$10</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
 
-  <main>
-    <section id="home">
-      <h2>Home</h2>
-      <p>This is the home section of the website. You can add some introductory text here.</p>
-    </section>
+    <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Shoes</h3>
+        <p>$25</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>This section is about your website. You can describe what the website is about and its purpose.</p>
-    </section>
+    <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product">
+        <h3>Watch</h3>
+        <p>$15</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+</main>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Provide your contact details or a form here so visitors can reach out to you.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 My Simple Website. All rights reserved.</p>
-  </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
 
